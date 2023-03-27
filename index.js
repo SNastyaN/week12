@@ -10,5 +10,8 @@ function nameMy() {
 }
 function Com(){
     let text = document.getElementById('comment').value;
-    text = text.replace
+    let textResult= text.replace(/XXX/gi, "***");
+        textResult= text.replace(/viagra/gi, "***");
+    document.querySelector('#result').value = textResult;
+
 }
